@@ -9,6 +9,6 @@ app.get('/add-product',(req,res,next)=>{
 })
 app.post('/store-product',(req,res,next)=>{
     console.log('item name: ',req.body);
-    res.send(`Item Received<br><form action="/add-product" method="POST"><button>Add New</button></form>`);
+    res.send(`Item Received<br><form action="/add-product" method="GET"><button>Add New</button></form>`);
 })
 app.listen(3000);
